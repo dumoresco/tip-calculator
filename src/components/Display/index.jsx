@@ -4,6 +4,9 @@ import {
   calculateTip,
   tipAmmount,
   totalPerPerson,
+  bill,
+  numberOfPeople,
+  tipPercent,
 } from "../../redux/reducers/tips";
 
 import "./style.css";
@@ -11,6 +14,9 @@ import "./style.css";
 export default function Display(props) {
   const tipAmmountValue = useSelector(tipAmmount);
   const totalPerPersonValue = useSelector(totalPerPerson);
+
+  const billValue = useSelector(bill);
+  const numberOfPeopleValue = useSelector(numberOfPeople);
 
   const dispatch = useDispatch();
 
@@ -32,7 +38,12 @@ export default function Display(props) {
           <div className="value">${totalPerPersonValue.toFixed(2)}</div>
         </div>
       </div>
-      <button onClick={() => dispatch(calculateTip())}>CALCULATE</button>
+      <button
+        onClick={() => dispatch(calculateTip())}
+        disabled={billValue == 0 || numberOfPeopleValue == 0 ? true : false}
+      >
+        CALCULATE
+      </button>
     </div>
   );
 }

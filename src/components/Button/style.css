@@ -27,6 +27,10 @@ input[type="number"].active {
   color: var(--very-dark-grayish-cyan);
 }
 
+button:disabled {
+  background-color: #30686d;
+}
+
 input[type="number"] {
   background-color: var(--very-light-grayish-cyan);
   font-size: 1.5rem;

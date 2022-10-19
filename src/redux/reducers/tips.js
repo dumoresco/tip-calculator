@@ -15,9 +15,6 @@ const sliceTips = createSlice({
       state.tipPercent = action.payload;
 
       state.tipSelected = action.payload;
-
-      console.log("tipSelected", state.tipSelected);
-      console.log("tipPercent", state.tipPercent);
     },
 
     updateBill: (state, action) => {
@@ -32,13 +29,6 @@ const sliceTips = createSlice({
         state.tipAmount = (state.bill * state.tipPercent) / 100;
         state.totalPerPerson = state.tipAmount / state.numberOfPeople;
       }
-
-      console.log("totalPerson: " + state.totalPerPerson);
-      console.log("tipPercent: " + state.tipPercent);
-      console.log("bill: " + state.bill);
-
-      console.log("numberOfPeople: " + state.numberOfPeople);
-      console.log("tipAmmount: " + state.tipAmount);
     },
   },
 });
@@ -58,3 +48,4 @@ export const totalPerPerson = (state) => state.totalPerPerson;
 export const numberOfPeople = (state) => state.numberOfPeople;
 export const bill = (state) => state.bill;
 export const tipAmmount = (state) => state.tipAmount;
+export const tipPercent = (state) => state.tipPercent;
