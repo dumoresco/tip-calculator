@@ -1,0 +1,35 @@
+input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 2rem;
+  outline: none;
+}
+
+input[type="button"] {
+  background-color: var(--very-dark-grayish-cyan);
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: var(--primary-color);
+  color: var(--very-dark-grayish-cyan);
+}
+
+input[type="button"].active,
+input[type="number"].active {
+  background-color: var(--primary-color);
+  color: var(--very-dark-grayish-cyan);
+}
+
+input[type="number"] {
+  background-color: var(--very-light-grayish-cyan);
+  font-size: 1.5rem;
+  text-align: end;
+  color: var(--very-dark-grayish-cyan);
+}

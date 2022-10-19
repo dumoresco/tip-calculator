@@ -1,0 +1,41 @@
+.input-container {
+  width: 100%;
+}
+
+label {
+  color: var(--dark-grayish-cyan);
+  font-size: 1.2rem;
+}
+
+.input {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border: 3px solid transparent;
+  background-color: var(--very-light-grayish-cyan);
+  border-radius: 5px;
+}
+
+.input img {
+  margin-left: 10px;
+}
+.input input {
+  background: none;
+  outline: none;
+  border: none;
+  flex: 0.5;
+  font-size: 1.5rem;
+  text-align: end;
+  color: var(--very-dark-grayish-cyan);
+}
+
+input::placeholder {
+  color: var(--grayish-cyan);
+  opacity: 0.3;
+}
+
+.input:hover {
+  border: 3px solid var(--primary-color);
+}
