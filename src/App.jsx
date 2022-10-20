@@ -22,8 +22,6 @@ function App() {
 
   const dispatch = useDispatch();
 
-  console.log(isSelected);
-
   return (
     <>
       <div className="container">

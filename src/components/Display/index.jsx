@@ -6,7 +6,6 @@ import {
   totalPerPerson,
   bill,
   numberOfPeople,
-  tipPercent,
 } from "../../redux/reducers/tips";
 
 import "./style.css";

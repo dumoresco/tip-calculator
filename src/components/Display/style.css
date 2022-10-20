@@ -14,7 +14,15 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 430px) {
+  .items {
+    flex-direction: column;
+  }
 
+  .items-desc span {
+    margin: 10px 0;
+  }
+}
 .items + .items {
   margin-top: 30px;
 }
